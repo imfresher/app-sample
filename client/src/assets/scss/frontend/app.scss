@@ -1,0 +1,110 @@
+// Vendors
+@import "~bootstrap/scss/bootstrap";
+
+// Site Styles
+@import "./header";
+@import "./footer";
+@import "../components";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212b36;
+  background: #f7f8fc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+.FrontendLayout {
+    width: 100vw;
+
+    // .AppSideBar {
+    //     // width: 80px;
+    //     position: absolute;
+    //     box-sizing: border-box;
+    //     top: 0px;
+    //     left: 0px;
+    //     height: 100%;
+    //     opacity: 1;
+    //     transition: width 0.1s ease-out 0s, height 0.1s ease-out 0s, top 0.1s ease-out 0s, left 0.1s ease-out 0s, background 0.1s eas
+    // }
+
+    .AppContainer {
+        // position: absolute;
+        // top: 0px;
+        // left: 80px;
+        // width: calc(100% - 80px);
+        // opacity: 1;
+        // z-index: 9;
+        transition: width 0.1s ease-out 0s, height 0.1s ease-out 0s, top 0.1s ease-out 0s, left 0.1s ease-out 0s, background 0.1s ease-out 0s, opacity 0.1s ease-out 0s, transform 0.1s ease-out 0s;
+    }
+}
+
+.VideoList {
+  .Video__title {
+    font-size: 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+
+    a {
+      color:#030303;
+    }
+  }
+
+  .Video__media {
+    position: relative;
+  }
+
+  .Video__time {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2px 6px;
+    font-weight: 500;
+    border-radius: 0.1rem;
+  }
+
+  .Video__author {
+    font-weight: 500;
+  }
+}
+
+.Video {
+  &.card {
+    border: 0;
+    box-shadow: 0 0.125rem 0.9rem rgba(0, 0, 0, 0.08);
+  }
+}
+
+.WatchPage__container {
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 2px;
+}
+
+.Watch__Sidebar {
+  background-color: #fff;
+
+  .Video {
+    &.card {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+
+  .Related__Videos {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
