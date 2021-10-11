@@ -5,9 +5,5 @@
   "common.times": "times",
   "common.ago": "ago",
   "HomePage.title": "Home page",
-  "WatchPage.title": "Watch page",
-  "doc.Lifecycle.react_version": "React version",
-  "doc.Lifecycle.language": "Language",
-  "doc.Lifecycle.msg": "Welcome to msg!",
-  "doc.Lifecycle.text": "If the new state is computed using the previous state, you can pass a function to setState. The function will receive the previous value, and return an updated value. Here’s an example of a counter component that uses both forms of setState"
+  "WatchPage.title": "Watch page"
 }

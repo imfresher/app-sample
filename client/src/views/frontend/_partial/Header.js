@@ -1,23 +1,6 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import { Dropdown } from 'react-bootstrap';
-import Block from 'views/components/Block';
-import LanguageSwitcher from 'views/common/LanguageSwitcher';
 import Avatar from 'assets/images/avatar.png';
-
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-  <a
-    className="d-block link-dark text-decoration-none dropdown-toggle"
-    href="javascript.void(0)"
-    ref={ref}
-    onClick={(e) => {
-      e.preventDefault();
-      onClick(e);
-    }}
-  >
-    {children}
-  </a>
-));
 
 function Header(props) {
   return (
@@ -50,26 +33,7 @@ function Header(props) {
           </div>
 
           <div className="d-flex align-items-center">
-            <Block
-              className="Block__language d-flex"
-              title={<FormattedMessage id="doc.Lifecycle.language" />}
-            >
-              <LanguageSwitcher id="language" />
-            </Block>
 
-            <Dropdown className="block block__account ml-4">
-              <Dropdown.Toggle as={CustomToggle} id="dropdown-basic">
-                <img src={Avatar} alt="mdo" width="32" height="32" className="rounded-circle" />
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="/">Dashboard</Dropdown.Item>
-                <Dropdown.Item href="/">My Profile</Dropdown.Item>
-                <Dropdown.Item href="/">Register</Dropdown.Item>
-                <Dropdown.Item href="/">Login</Dropdown.Item>
-                <Dropdown.Item href="/">Logout</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
           </div>
         </div>
       </div>

@@ -5,9 +5,5 @@
   "common.times": "lần",
   "common.ago": "trước",
   "HomePage.title": "Trang chủ",
-  "WatchPage.title": "Xem video",
-  "doc.Lifecycle.react_version": "Phiên bản React",
-  "doc.Lifecycle.language": "Ngôn ngữ",
-  "doc.Lifecycle.msg": "Chào mừng bạn!",
-  "doc.Lifecycle.text": "Nếu trạng thái mới được tính bằng trạng thái trước đó, bạn có thể chuyển một hàm cho setState. Hàm sẽ nhận giá trị trước đó và trả về giá trị cập nhật. Dưới đây là ví dụ về thành phần bộ đếm sử dụng cả hai dạng setState"
+  "WatchPage.title": "Xem video"
 }
